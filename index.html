@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateX - Cutting-Edge Tech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #454545;
+            color: #E4E6EB;
+        }
+        header {
+            background: #454545;
+            padding: 20px;
+            text-align: center;
+            color:bisque;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            background: url('https://via.placeholder.com/1200x600') no-repeat center/cover;
+            padding: 120px 20px;
+            color:blueviolet;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #E4E6EB;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            background: #f4e1d2;
+            color: #454545;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1.5s ease-in-out forwards;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background: #454545;
+            padding: 20px;
+            margin: 15px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #454545;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        InnovateX - Your Gateway to Next-Gen Tech
+    </header>
+
+    <div class="hero">
+        Discover the Latest Smart Innovations Today!
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>About Us</h2>
+            <p>InnovateX brings you the best in smart technology, from phones to AI-driven gadgets.</p>
+            <a href="#" class="button">Shop Now</a>
+        </div>
+
+        <div class="section">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="./1.jpg" height="150" width="150" alt="Smartphone">
+                    <p>Next-Gen Smartphone</p>
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+                <div class="product">
+                    <img src="./2.jpg" height="150" width="150" alt="Laptop">
+                    <p>Ultra-Thin Laptop</p>
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+                <div class="product">
+                    <img src="./3.jpg" height="150" width="150" alt="Wearables">
+                    <p>Smart Wearables</p>
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+                <div class="product">
+                    <img src="./4.jpg" height="150" width="150" alt="Gaming">
+                    <p>Gaming Gear</p>
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+                <div class="product">
+                    <img src="./5.jpg" height="150" width="150" alt="Smart Home">
+                    <p>Smart Home Devices</p>
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 InnovateX. All rights reserved.
+    </footer>
+</body>
+</html>
+        
